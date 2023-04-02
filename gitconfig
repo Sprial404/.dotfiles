@@ -1,0 +1,28 @@
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim
+	excludesfile = ~/.gitignore
+	autocrlf = input
+[diff]
+	tool = nvimdiff
+[commit]
+	gpgsign = true
+	template = ~/.gitmessage
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[push]
+	default = current
+[color]
+	ui = auto
+[merge]
+	ff = only
+[fetch]
+	prune = true
+[rebase]
+	autoSquash = true
+[include]
+    path=~/.gitconfig.local
