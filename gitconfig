@@ -26,3 +26,5 @@
 	autoSquash = true
 [include]
     path=~/.gitconfig.local
+[alias]
+	unstage = reset HEAD --
