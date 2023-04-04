@@ -7,7 +7,6 @@
 [diff]
 	tool = nvimdiff
 [commit]
-	gpgsign = true
 	template = ~/.gitmessage
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
